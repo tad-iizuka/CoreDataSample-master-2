@@ -2,7 +2,7 @@
 //  Treino+CoreDataClass.swift
 //  CoreDataSample
 //
-//  Created by Nelson on 9/1/2017.
+//  Created by Tadashi on 2017/01/10.
 //  Copyright © 2017 T@d. All rights reserved.
 //
 

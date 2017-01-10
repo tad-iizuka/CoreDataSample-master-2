@@ -11,7 +11,7 @@ import CoreData
 
 class ExercicioView: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-	public var treino1 : Treino? = nil
+	public var treino : Treino? = nil
 
 	var item = [Exercicio]()
 
@@ -55,15 +55,15 @@ class ExercicioView: UIViewController, UITableViewDataSource, UITableViewDelegat
 			(action: UIAlertAction!) -> Void in
 
 			let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-			let exercicio1 = Exercicio(context: context)
+			let exercicio = Exercicio(context: context)
 			let textField = alert.textFields![0] as UITextField
 			if textField.text != "" {
-				exercicio1.name = textField.text
+				exercicio.name = textField.text
 			} else {
-				exercicio1.name = String(self.item.count+1)
+				exercicio.name = String(self.item.count+1)
 			}
-			exercicio1.date = NSDate()
-			self.treino1?.addToExercicio1(exercicio1)
+			exercicio.date = NSDate()
+			self.treino?.addToExercicio(exercicio)
 
 			do {
 				try context.save()
@@ -88,8 +88,8 @@ class ExercicioView: UIViewController, UITableViewDataSource, UITableViewDelegat
 	func loadCoreData() {
 
         let fetchRequest: NSFetchRequest<Exercicio> = Exercicio.fetchRequest()
-		if self.treino1 != nil {
-			fetchRequest.predicate = NSPredicate(format: "treino1 = %@", self.treino1!)
+		if self.treino != nil {
+			fetchRequest.predicate = NSPredicate(format: "treino = %@", self.treino!)
 		}
         do {
 			item = try (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext.fetch(fetchRequest)
@@ -168,16 +168,16 @@ class ExercicioView: UIViewController, UITableViewDataSource, UITableViewDelegat
         
         if segue.identifier == "SerieView" {
             let serieView1:SerieView = segue.destination as! SerieView
-            serieView1.treino2 = item[(self.tableView.indexPathForSelectedRow?.row)!]
+//            serieView1.treino = item[(self.tableView.indexPathForSelectedRow?.row)!]
             serieView1.title = item[(self.tableView.indexPathForSelectedRow?.row)!].name
             let serieView2:SerieView = segue.destination as! SerieView
-            serieView2.exercicio2 = item[(self.tableView.indexPathForSelectedRow?.row)!]
+            serieView2.exercicio = item[(self.tableView.indexPathForSelectedRow?.row)!]
             serieView2.title = item[(self.tableView.indexPathForSelectedRow?.row)!].name
         } else if segue.identifier == "AllSerieView" {
             let serieView1:SerieView = segue.destination as! SerieView
-            serieView1.treino2 = nil
+            serieView1.treino = nil
             let serieView2:SerieView = segue.destination as! SerieView
-            serieView2.exercicio2 = nil
+            serieView2.exercicio = nil
         }
     }
 

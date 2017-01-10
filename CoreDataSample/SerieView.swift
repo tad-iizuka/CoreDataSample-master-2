@@ -12,8 +12,8 @@ import CoreData
 
 class SerieView: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    public var treino2 : Treino? = nil
-    public var exercicio2 : Exercicio? = nil
+    public var treino : Treino? = nil
+    public var exercicio : Exercicio? = nil
     
     var item = [Serie]()
     
@@ -56,27 +56,27 @@ class SerieView: UIViewController, UITableViewDataSource, UITableViewDelegate {
             UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
                 (action: UIAlertAction!) -> Void in
                 
-                let context1 = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-                let serie1 = Exercicio(context1: context1)
+                let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+                var serie = Serie(context: context)
                 let textField1 = alert.textFields![0] as UITextField
                 if textField1.text != "" {
-                    serie1.name = textField1.text
+                    serie.name = textField1.text
                 } else {
-                    serie1.name = String(self.item.count+1)
+                    serie.name = String(self.item.count+1)
                 }
-                seie1.date = NSDate()
-                self.treino2?.addToSerie1(serie1)
+                serie.date = NSDate()
+                self.treino?.addToSerie(serie)
                 
-                let context2 = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-                let serie2 = Exercicio(context2: context2)
+//                let context2 = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+                serie = Serie(context: context)
                 let textField2 = alert.textFields![0] as UITextField
                 if textField2.text != "" {
-                    serie2.name = textField2.text
+                    serie.name = textField2.text
                 } else {
-                    serie2.name = String(self.item.count+1)
+                    serie.name = String(self.item.count+1)
                 }
-                serie2.date = NSDate()
-                self.exercicio2?.addToSerie2(serie2)
+                serie.date = NSDate()
+                self.exercicio?.addToSerie(serie)
                 
                 do {
                     try context.save()
@@ -100,13 +100,13 @@ class SerieView: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func loadCoreData() {
         
-        let fetchRequest1: NSFetchRequest<Serie> = Serie.fetchRequest()
-        if self.treino2 != nil {
-            fetchRequest.predicate = NSPredicate(format: "treino2 = %@", self.treino2!)
+        let fetchRequest: NSFetchRequest<Serie> = Serie.fetchRequest()
+        if self.treino != nil {
+            fetchRequest.predicate = NSPredicate(format: "treino = %@", self.treino!)
         }
-        let fetchRequest2: NSFetchRequest<Serie> = Serie.fetchRequest()
-        if self.exercicio2 != nil {
-            fetchRequest.predicate = NSPredicate(format: "exercicio2 = %@", self.exercicio2!)
+//        let fetchRequest: NSFetchRequest<Serie> = Serie.fetchRequest()
+        if self.exercicio != nil {
+            fetchRequest.predicate = NSPredicate(format: "exercicio = %@", self.exercicio!)
         }
         do {
             item = try (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext.fetch(fetchRequest)

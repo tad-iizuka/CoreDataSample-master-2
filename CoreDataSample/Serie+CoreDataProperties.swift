@@ -2,9 +2,8 @@
 //  Serie+CoreDataProperties.swift
 //  CoreDataSample
 //
-//  Created by Nelson on 9/1/2017.
+//  Created by Tadashi on 2017/01/10.
 //  Copyright © 2017 T@d. All rights reserved.
-//  This file was automatically generated and should not be edited.
 //
 
 import Foundation
@@ -17,9 +16,9 @@ extension Serie {
         return NSFetchRequest<Serie>(entityName: "Serie");
     }
 
-    @NSManaged public var name: String?
     @NSManaged public var date: NSDate?
-    @NSManaged public var exercicio2: Exercicio?
-    @NSManaged public var treino2: Treino?
+    @NSManaged public var name: String?
+    @NSManaged public var exercicio: Exercicio?
+    @NSManaged public var treino: Treino?
 
 }

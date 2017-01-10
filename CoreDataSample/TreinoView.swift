@@ -171,11 +171,11 @@ class TreinoView: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
 		if segue.identifier == "ExercicioView" {
 			let exercicioView:ExercicioView = segue.destination as! ExercicioView
-			exercicioView.treino1 = item[(self.tableView.indexPathForSelectedRow?.row)!]
+			exercicioView.treino = item[(self.tableView.indexPathForSelectedRow?.row)!]
 			exercicioView.title = item[(self.tableView.indexPathForSelectedRow?.row)!].name
 		} else if segue.identifier == "AllExercicioView" {
 			let exercicioView:ExercicioView = segue.destination as! ExercicioView
-			exercicioView.treino1 = nil
+			exercicioView.treino = nil
 		}
     }
 }

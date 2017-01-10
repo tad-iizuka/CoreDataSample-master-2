@@ -2,7 +2,7 @@
 //  Exercicio+CoreDataProperties.swift
 //  CoreDataSample
 //
-//  Created by Nelson on 9/1/2017.
+//  Created by Tadashi on 2017/01/10.
 //  Copyright © 2017 T@d. All rights reserved.
 //
 
@@ -18,24 +18,24 @@ extension Exercicio {
 
     @NSManaged public var date: NSDate?
     @NSManaged public var name: String?
-    @NSManaged public var treino1: Treino?
-    @NSManaged public var serie2: NSSet?
+    @NSManaged public var serie: NSSet?
+    @NSManaged public var treino: Treino?
 
 }
 
-// MARK: Generated accessors for serie2
+// MARK: Generated accessors for serie
 extension Exercicio {
 
-    @objc(addSerie2Object:)
-    @NSManaged public func addToSerie2(_ value: Serie)
+    @objc(addSerieObject:)
+    @NSManaged public func addToSerie(_ value: Serie)
 
-    @objc(removeSerie2Object:)
-    @NSManaged public func removeFromSerie2(_ value: Serie)
+    @objc(removeSerieObject:)
+    @NSManaged public func removeFromSerie(_ value: Serie)
 
-    @objc(addSerie2:)
-    @NSManaged public func addToSerie2(_ values: NSSet)
+    @objc(addSerie:)
+    @NSManaged public func addToSerie(_ values: NSSet)
 
-    @objc(removeSerie2:)
-    @NSManaged public func removeFromSerie2(_ values: NSSet)
+    @objc(removeSerie:)
+    @NSManaged public func removeFromSerie(_ values: NSSet)
 
 }

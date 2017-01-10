@@ -14,13 +14,13 @@
 		321A92F61D91606B003B1D91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 321A92F51D91606B003B1D91 /* Assets.xcassets */; };
 		321A92F91D91606B003B1D91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 321A92F71D91606B003B1D91 /* LaunchScreen.storyboard */; };
 		321A93011D91647B003B1D91 /* ExercicioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321A93001D91647B003B1D91 /* ExercicioView.swift */; };
+		32BCEBAC1E24B807006CF6AB /* Serie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BCEBA61E24B807006CF6AB /* Serie+CoreDataClass.swift */; };
+		32BCEBAD1E24B807006CF6AB /* Serie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BCEBA71E24B807006CF6AB /* Serie+CoreDataProperties.swift */; };
+		32BCEBAE1E24B807006CF6AB /* Exercicio+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BCEBA81E24B807006CF6AB /* Exercicio+CoreDataClass.swift */; };
+		32BCEBAF1E24B807006CF6AB /* Exercicio+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BCEBA91E24B807006CF6AB /* Exercicio+CoreDataProperties.swift */; };
+		32BCEBB01E24B807006CF6AB /* Treino+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BCEBAA1E24B807006CF6AB /* Treino+CoreDataClass.swift */; };
+		32BCEBB11E24B807006CF6AB /* Treino+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BCEBAB1E24B807006CF6AB /* Treino+CoreDataProperties.swift */; };
 		6AC090F61E240D920067A1C8 /* SerieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC090F51E240D920067A1C8 /* SerieView.swift */; };
-		6AC091031E245ECB0067A1C8 /* Exercicio+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC090FD1E245ECB0067A1C8 /* Exercicio+CoreDataClass.swift */; };
-		6AC091041E245ECB0067A1C8 /* Exercicio+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC090FE1E245ECB0067A1C8 /* Exercicio+CoreDataProperties.swift */; };
-		6AC091051E245ECB0067A1C8 /* Serie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC090FF1E245ECB0067A1C8 /* Serie+CoreDataClass.swift */; };
-		6AC091061E245ECB0067A1C8 /* Serie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC091001E245ECB0067A1C8 /* Serie+CoreDataProperties.swift */; };
-		6AC091071E245ECB0067A1C8 /* Treino+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC091011E245ECB0067A1C8 /* Treino+CoreDataClass.swift */; };
-		6AC091081E245ECB0067A1C8 /* Treino+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC091021E245ECB0067A1C8 /* Treino+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,13 +33,13 @@
 		321A92F81D91606B003B1D91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		321A92FA1D91606B003B1D91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		321A93001D91647B003B1D91 /* ExercicioView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercicioView.swift; sourceTree = "<group>"; };
+		32BCEBA61E24B807006CF6AB /* Serie+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Serie+CoreDataClass.swift"; sourceTree = "<group>"; };
+		32BCEBA71E24B807006CF6AB /* Serie+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Serie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		32BCEBA81E24B807006CF6AB /* Exercicio+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Exercicio+CoreDataClass.swift"; sourceTree = "<group>"; };
+		32BCEBA91E24B807006CF6AB /* Exercicio+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Exercicio+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		32BCEBAA1E24B807006CF6AB /* Treino+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Treino+CoreDataClass.swift"; sourceTree = "<group>"; };
+		32BCEBAB1E24B807006CF6AB /* Treino+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Treino+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6AC090F51E240D920067A1C8 /* SerieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerieView.swift; sourceTree = "<group>"; };
-		6AC090FD1E245ECB0067A1C8 /* Exercicio+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Exercicio+CoreDataClass.swift"; sourceTree = "<group>"; };
-		6AC090FE1E245ECB0067A1C8 /* Exercicio+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Exercicio+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		6AC090FF1E245ECB0067A1C8 /* Serie+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Serie+CoreDataClass.swift"; sourceTree = "<group>"; };
-		6AC091001E245ECB0067A1C8 /* Serie+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Serie+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		6AC091011E245ECB0067A1C8 /* Treino+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Treino+CoreDataClass.swift"; sourceTree = "<group>"; };
-		6AC091021E245ECB0067A1C8 /* Treino+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Treino+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,12 +89,12 @@
 		321A931B1D921518003B1D91 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				6AC090FD1E245ECB0067A1C8 /* Exercicio+CoreDataClass.swift */,
-				6AC090FE1E245ECB0067A1C8 /* Exercicio+CoreDataProperties.swift */,
-				6AC090FF1E245ECB0067A1C8 /* Serie+CoreDataClass.swift */,
-				6AC091001E245ECB0067A1C8 /* Serie+CoreDataProperties.swift */,
-				6AC091011E245ECB0067A1C8 /* Treino+CoreDataClass.swift */,
-				6AC091021E245ECB0067A1C8 /* Treino+CoreDataProperties.swift */,
+				32BCEBA61E24B807006CF6AB /* Serie+CoreDataClass.swift */,
+				32BCEBA71E24B807006CF6AB /* Serie+CoreDataProperties.swift */,
+				32BCEBA91E24B807006CF6AB /* Exercicio+CoreDataProperties.swift */,
+				32BCEBA81E24B807006CF6AB /* Exercicio+CoreDataClass.swift */,
+				32BCEBAA1E24B807006CF6AB /* Treino+CoreDataClass.swift */,
+				32BCEBAB1E24B807006CF6AB /* Treino+CoreDataProperties.swift */,
 			);
 			name = Entity;
 			sourceTree = "<group>";
@@ -172,17 +172,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AC091071E245ECB0067A1C8 /* Treino+CoreDataClass.swift in Sources */,
-				6AC091051E245ECB0067A1C8 /* Serie+CoreDataClass.swift in Sources */,
-				6AC091061E245ECB0067A1C8 /* Serie+CoreDataProperties.swift in Sources */,
+				32BCEBB01E24B807006CF6AB /* Treino+CoreDataClass.swift in Sources */,
+				32BCEBAD1E24B807006CF6AB /* Serie+CoreDataProperties.swift in Sources */,
 				321A92EE1D91606B003B1D91 /* TreinoView.swift in Sources */,
 				321A93011D91647B003B1D91 /* ExercicioView.swift in Sources */,
 				321A92F41D91606B003B1D91 /* CoreDataSample.xcdatamodeld in Sources */,
-				6AC091041E245ECB0067A1C8 /* Exercicio+CoreDataProperties.swift in Sources */,
-				6AC091031E245ECB0067A1C8 /* Exercicio+CoreDataClass.swift in Sources */,
 				321A92EC1D91606B003B1D91 /* AppDelegate.swift in Sources */,
-				6AC091081E245ECB0067A1C8 /* Treino+CoreDataProperties.swift in Sources */,
+				32BCEBAC1E24B807006CF6AB /* Serie+CoreDataClass.swift in Sources */,
 				6AC090F61E240D920067A1C8 /* SerieView.swift in Sources */,
+				32BCEBAF1E24B807006CF6AB /* Exercicio+CoreDataProperties.swift in Sources */,
+				32BCEBB11E24B807006CF6AB /* Treino+CoreDataProperties.swift in Sources */,
+				32BCEBAE1E24B807006CF6AB /* Exercicio+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

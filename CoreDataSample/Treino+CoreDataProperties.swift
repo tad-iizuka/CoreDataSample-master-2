@@ -2,7 +2,7 @@
 //  Treino+CoreDataProperties.swift
 //  CoreDataSample
 //
-//  Created by Nelson on 9/1/2017.
+//  Created by Tadashi on 2017/01/10.
 //  Copyright © 2017 T@d. All rights reserved.
 //
 
@@ -18,41 +18,41 @@ extension Treino {
 
     @NSManaged public var date: NSDate?
     @NSManaged public var name: String?
-    @NSManaged public var exercicio1: NSSet?
-    @NSManaged public var serie1: NSSet?
+    @NSManaged public var exercicio: NSSet?
+    @NSManaged public var serie: NSSet?
 
 }
 
-// MARK: Generated accessors for exercicio1
+// MARK: Generated accessors for exercicio
 extension Treino {
 
-    @objc(addExercicio1Object:)
-    @NSManaged public func addToExercicio1(_ value: Exercicio)
+    @objc(addExercicioObject:)
+    @NSManaged public func addToExercicio(_ value: Exercicio)
 
-    @objc(removeExercicio1Object:)
-    @NSManaged public func removeFromExercicio1(_ value: Exercicio)
+    @objc(removeExercicioObject:)
+    @NSManaged public func removeFromExercicio(_ value: Exercicio)
 
-    @objc(addExercicio1:)
-    @NSManaged public func addToExercicio1(_ values: NSSet)
+    @objc(addExercicio:)
+    @NSManaged public func addToExercicio(_ values: NSSet)
 
-    @objc(removeExercicio1:)
-    @NSManaged public func removeFromExercicio1(_ values: NSSet)
+    @objc(removeExercicio:)
+    @NSManaged public func removeFromExercicio(_ values: NSSet)
 
 }
 
-// MARK: Generated accessors for serie1
+// MARK: Generated accessors for serie
 extension Treino {
 
-    @objc(addSerie1Object:)
-    @NSManaged public func addToSerie1(_ value: Serie)
+    @objc(addSerieObject:)
+    @NSManaged public func addToSerie(_ value: Serie)
 
-    @objc(removeSerie1Object:)
-    @NSManaged public func removeFromSerie1(_ value: Serie)
+    @objc(removeSerieObject:)
+    @NSManaged public func removeFromSerie(_ value: Serie)
 
-    @objc(addSerie1:)
-    @NSManaged public func addToSerie1(_ values: NSSet)
+    @objc(addSerie:)
+    @NSManaged public func addToSerie(_ values: NSSet)
 
-    @objc(removeSerie1:)
-    @NSManaged public func removeFromSerie1(_ values: NSSet)
+    @objc(removeSerie:)
+    @NSManaged public func removeFromSerie(_ values: NSSet)
 
 }

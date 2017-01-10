@@ -3,24 +3,24 @@
     <entity name="Exercicio" representedClassName=".Exercicio" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="serie2" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Serie" inverseName="exercicio2" inverseEntity="Serie" syncable="YES"/>
-        <relationship name="treino1" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Treino" inverseName="exercicio1" inverseEntity="Treino" syncable="YES"/>
+        <relationship name="serie" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Serie" inverseName="exercicio" inverseEntity="Serie" syncable="YES"/>
+        <relationship name="treino" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Treino" inverseName="exercicio" inverseEntity="Treino" syncable="YES"/>
     </entity>
-    <entity name="Serie" representedClassName=".Serie" syncable="YES" codeGenerationType="class">
+    <entity name="Serie" representedClassName=".Serie" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="exercicio2" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exercicio" inverseName="serie2" inverseEntity="Exercicio" syncable="YES"/>
-        <relationship name="treino2" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Treino" inverseName="serie1" inverseEntity="Treino" syncable="YES"/>
+        <relationship name="exercicio" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exercicio" inverseName="serie" inverseEntity="Exercicio" syncable="YES"/>
+        <relationship name="treino" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Treino" inverseName="serie" inverseEntity="Treino" syncable="YES"/>
     </entity>
     <entity name="Treino" representedClassName=".Treino" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="exercicio1" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Exercicio" inverseName="treino1" inverseEntity="Exercicio" syncable="YES"/>
-        <relationship name="serie1" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Serie" inverseName="treino2" inverseEntity="Serie" syncable="YES"/>
+        <relationship name="exercicio" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Exercicio" inverseName="treino" inverseEntity="Exercicio" syncable="YES"/>
+        <relationship name="serie" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Serie" inverseName="treino" inverseEntity="Serie" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Treino" positionX="-182" positionY="72" width="128" height="103"/>
-        <element name="Exercicio" positionX="-29" positionY="-171" width="128" height="103"/>
-        <element name="Serie" positionX="270" positionY="-99" width="128" height="103"/>
+        <element name="Exercicio" positionX="-29" positionY="-171" width="128" height="105"/>
+        <element name="Serie" positionX="270" positionY="-99" width="128" height="105"/>
+        <element name="Treino" positionX="-182" positionY="72" width="128" height="105"/>
     </elements>
 </model>
